@@ -41,10 +41,10 @@ class MaxHeap:
             if leftChildIndex > lastIndex:
                 break
             else:
-                if leftChildIndex < lastIndex:
+                if leftChildIndex <= lastIndex:
                     left = self.values[leftChildIndex]
 
-                if rightChildIndex < lastIndex:
+                if rightChildIndex <= lastIndex:
                     right = self.values[rightChildIndex]
 
                 if right:
